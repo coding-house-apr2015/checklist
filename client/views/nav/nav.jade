@@ -1,4 +1,4 @@
-nav.navbar.navbar-default
+nav.navbar.navbar-default(ng-controller='NavCtrl')
   .container-fluid
     .navbar-header
       button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
@@ -15,4 +15,4 @@ nav.navbar.navbar-default
         li: a(ui-sref='contact'): i.fa.fa.fa-phone &nbsp; Contact
         li: a(ui-sref='register'): i.fa.fa-user-plus &nbsp; Register
         li: a(ui-sref='login'): i.fa.fa-key &nbsp; Login
-        li: a(href='#'): i.fa.fa-sign-out &nbsp; Logout
+        li: button.btn.btn-danger(ng-click='logout()'): i.fa.fa-sign-out &nbsp; Logout
