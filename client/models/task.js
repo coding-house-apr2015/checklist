@@ -11,9 +11,8 @@ angular.module('checklist')
    }
 
   function add(task){
-    init();
     return afTasks.$add(task);
   }
 
-  return {add: add};
+  return {add: add, init: init};
 }]);

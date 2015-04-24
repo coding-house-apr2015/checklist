@@ -2,6 +2,8 @@
 
 angular.module('checklist')
 .controller('TasksCtrl', ['$scope', 'Task', '$window', function($scope, Task, $window){
+  Task.init();
+
   $scope.addTask = function(task){
     var o = {
       title: task.title,
